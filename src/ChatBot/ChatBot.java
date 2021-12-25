@@ -24,5 +24,51 @@ public class ChatBot {
             i+=1;
             System.out.println(i + " !");
         }
+        System.out.println("Let's test your knowledge.");
+        System.out.println("Why do we use methods?");
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines");
+        System.out.println("3. To determinate the education time of a program.");
+        System.out.println("4. To interrupt the execution of a program.");
+        /* switch (ans)
+        {
+            case 1:
+                System.out.println("Please, try again!");
+            case 2:
+                System.out.println("Great, you're right!");
+                break;
+            case 3:
+                System.out.println("Please, try again!");
+            case 4:
+                System.out.println("Please, try again!");
+            default:
+                System.out.println("There's no such variant");
+        }*/
+        int ans = input.nextInt();
+        while (ans != 2)
+        {
+              if (ans == 1)
+            {
+                System.out.println("Please, try again.");
+                ans = input.nextInt();
+            }
+            else if(ans == 3)
+            {
+                System.out.println("Please, try again.");
+                ans = input.nextInt();
+            }
+            else if(ans == 4)
+            {
+                System.out.println("Please, try again.");
+                ans = input.nextInt();
+            }
+              else
+              {
+                  System.out.println("Out of range. Select from 1 to 4.");
+                  ans = input.nextInt();
+              }
+        }
+        System.out.println("Great, you're right!");
+        System.out.println("Goodbye, have a nice day!");
     }
 }
